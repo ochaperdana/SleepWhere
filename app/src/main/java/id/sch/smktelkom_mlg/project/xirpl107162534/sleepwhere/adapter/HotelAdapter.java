@@ -1,0 +1,97 @@
+package id.sch.smktelkom_mlg.project.xirpl107162534.sleepwhere.adapter;
+
+import android.content.Context;
+import android.net.Uri;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+
+import id.sch.smktelkom_mlg.project.xirpl107162534.sleepwhere.R;
+import id.sch.smktelkom_mlg.project.xirpl107162534.sleepwhere.model.Hotel;
+
+/**
+ * Created by Smktelkom on 10/28/2016.
+ */
+
+public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> {
+
+    IHotelAdapter mIHotelAdapter;
+    
+
+    public interface IHotelAdapter
+    {
+        void doClick(int pos);
+        void doEdit(int pos);
+        void doDelete(int pos);
+        void doFav(int pos);
+        void doShare(int pos);
+    }
+
+    @Override
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View v= LayoutInflater.from(parent.getContext()).inflate(R.layout.item,parent,false);
+        ViewHolder vh=new ViewHolder(v);
+        return vh;
+    }
+
+    @Override
+    public void onBindViewHolder(ViewHolder holder, int position) {
+        Hotel hotel=hotelList.get(position);
+        holder.tvJudul.setText(hotel.judul);
+        holder.tvDeskripsi.setText(hotel.deskripsi);
+        holder.ivFoto.setImageDrawable(hotel.foto);
+    }
+
+    @Override
+    public int getItemCount() {
+        if (hotelList!=null)
+            return hotelList.size();
+        return 0;
+    }
+
+    public class ViewHolder extends RecyclerView.ViewHolder {
+        ImageView ivFoto;
+        TextView tvJudul;
+        TextView tvDeskripsi;
+        Button bEdit;
+        Button bDelete;
+        ImageButton ibFav;
+        ImageButton ibShare;
+
+        public ViewHolder(View itemView) {
+            super(itemView);
+            ivFoto=(ImageView) itemView.findViewById(R.id.imageView);
+            tvJudul=(TextView) itemView.findViewById(R.id.judul);
+            tvDeskripsi=(TextView) itemView.findViewById(R.id.deskripsi);
+            ibFav=(ImageButton) itemView.findViewById(R.id.like);
+            itemView.setOnClickListener(new View.OnClickListener()
+            {
+                @Override
+                public void onClick(View v)
+                {
+                    mIHotelAdapter.doClick(getAdapterPosition());
+                }
+            });
+          ibFav.setOnClickListener(new View.OnClickListener()
+            {
+                @Override
+                public void onClick(View v)
+                {
+                    mIHotelAdapter.doFav(getAdapterPosition());
+                }
+            });
+        }
+    }
+    ArrayList<Hotel> hotelList;
+    public HotelAdapter(ArrayList<Hotel> hotelList){
+        this.hotelList=hotelList;
+    }
+}
+
