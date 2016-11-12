@@ -28,10 +28,7 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
     public interface IHotelAdapter
     {
         void doClick(int pos);
-        void doEdit(int pos);
-        void doDelete(int pos);
         void doFav(int pos);
-        void doShare(int pos);
     }
 
     @Override
@@ -46,7 +43,7 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
         Hotel hotel=hotelList.get(position);
         holder.tvJudul.setText(hotel.judul);
         holder.tvDeskripsi.setText(hotel.deskripsi);
-        holder.ivFoto.setImageDrawable(hotel.foto);
+        holder.ivFoto.setImageURI(Uri.parse(hotel.foto));
     }
 
     @Override
@@ -90,8 +87,9 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
         }
     }
     ArrayList<Hotel> hotelList;
-    public HotelAdapter(ArrayList<Hotel> hotelList){
+    public HotelAdapter(Context context, ArrayList<Hotel> hotelList){
         this.hotelList=hotelList;
+        mIHotelAdapter=(IHotelAdapter) context;
     }
 }
 
