@@ -23,12 +23,11 @@ import id.sch.smktelkom_mlg.project.xirpl107162534.sleepwhere.model.Hotel;
 public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> {
 
     IHotelAdapter mIHotelAdapter;
-    
+    ArrayList<Hotel> hotelList;
 
-    public interface IHotelAdapter
-    {
-        void doClick(int pos);
-        void doFav(int pos);
+    public HotelAdapter(Context context, ArrayList<Hotel> hotelList) {
+        this.hotelList = hotelList;
+        mIHotelAdapter = (IHotelAdapter) context;
     }
 
     @Override
@@ -53,13 +52,18 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
         return 0;
     }
 
+    public interface IHotelAdapter {
+        void doClick(int pos);
+
+        void doFav(int pos);
+    }
+
     public class ViewHolder extends RecyclerView.ViewHolder {
         ImageView ivFoto;
         TextView tvJudul;
         TextView tvDeskripsi;
         Button bEdit;
         Button bDelete;
-        ImageButton ibFav;
         ImageButton ibShare;
 
         public ViewHolder(View itemView) {
@@ -67,7 +71,6 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
             ivFoto=(ImageView) itemView.findViewById(R.id.imageView);
             tvJudul=(TextView) itemView.findViewById(R.id.judul);
             tvDeskripsi=(TextView) itemView.findViewById(R.id.deskripsi);
-            ibFav=(ImageButton) itemView.findViewById(R.id.like);
             itemView.setOnClickListener(new View.OnClickListener()
             {
                 @Override
@@ -76,20 +79,8 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
                     mIHotelAdapter.doClick(getAdapterPosition());
                 }
             });
-          ibFav.setOnClickListener(new View.OnClickListener()
-            {
-                @Override
-                public void onClick(View v)
-                {
-                    mIHotelAdapter.doFav(getAdapterPosition());
-                }
-            });
+
         }
-    }
-    ArrayList<Hotel> hotelList;
-    public HotelAdapter(Context context, ArrayList<Hotel> hotelList){
-        this.hotelList=hotelList;
-        mIHotelAdapter=(IHotelAdapter) context;
     }
 }
 

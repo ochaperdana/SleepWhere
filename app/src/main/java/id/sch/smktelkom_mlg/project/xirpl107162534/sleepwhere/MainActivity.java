@@ -4,7 +4,6 @@ import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -14,9 +13,13 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.RatingBar;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -28,28 +31,28 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
     public static final String HOTEL = "hotel";
     ArrayList<Hotel> mList=new ArrayList<>();
     HotelAdapter mAdapter;
-    private int[] arFoto;
-
     ArrayList<Hotel> mListAll=new ArrayList<>();
     boolean isFilter;
     ArrayList<Integer> mListMapFilter=new ArrayList<>();
     String mQuery;
-
+    private int[] arFoto;
+    private RatingBar ratingBar;
+    private TextView txtRatingValue;
+    private Button btnSubmit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         RecyclerView recyclerView=(RecyclerView) findViewById(R.id.recyclerView);
         LinearLayoutManager layoutManager=new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
         mAdapter=new HotelAdapter(this,mList);
         recyclerView.setAdapter(mAdapter);
-        
         fillData();
-
+        addListenerOnRatingBar();
+        addListenerOnButton();
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,7 +61,42 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
                         .setAction("Action", null).show();
             }
         });
+
     }
+
+    private void addListenerOnRatingBar() {
+
+        ratingBar = (RatingBar) findViewById(R.id.ratingbar1);
+        txtRatingValue = (TextView) findViewById(R.id.txtRatingValue);
+        ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+            public void onRatingChanged(RatingBar ratingBar, float rating,
+                                        boolean fromUser) {
+
+                txtRatingValue.setText(String.valueOf(rating));
+
+            }
+        });
+    }
+
+    private void addListenerOnButton() {
+        ratingBar = (RatingBar) findViewById(R.id.ratingbar1);
+        btnSubmit = (Button) findViewById(R.id.button1);
+
+        //if click on me, then display the current rating value.
+        btnSubmit.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                Toast.makeText(MainActivity.this,
+                        String.valueOf(ratingBar.getRating()),
+                        Toast.LENGTH_SHORT).show();
+
+            }
+
+        });
+    }
+
 
     private void fillData() {
         Resources resources=getResources();

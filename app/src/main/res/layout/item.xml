@@ -1,95 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView 
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cardView"
-    android:foreground="?attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="304dp"
+    android:layout_gravity="center"
     android:layout_marginBottom="@dimen/activity_vertical_margin"
     android:layout_marginLeft="@dimen/activity_horizontal_margin"
     android:layout_marginRight="@dimen/activity_horizontal_margin"
-    android:layout_gravity="center"
-    android:layout_width="match_parent"
-    android:layout_height="304dp">
-    
+    android:foreground="?attr/selectableItemBackground">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/imageView"
-            tools:src="@drawable/a"
-            android:scaleType="centerCrop"
             android:layout_width="match_parent"
-            android:layout_height="200dp" />
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/a" />
 
         <TextView
+            android:id="@+id/judul"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:id="@+id/judul"
-            tools:text="Judul"
-            android:layout_marginLeft="16dp"
             android:layout_alignBottom="@id/imageView"
+            android:layout_marginLeft="16dp"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white"
+            tools:text="Judul" />
 
         <TextView
+            android:id="@+id/deskripsi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/deskripsi"
             android:layout_below="@+id/imageView"
-            android:padding="16dp"
-            android:maxLines="1"
             android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="16dp"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
-        <ImageButton
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:id="@+id/rating1"
-            android:layout_marginRight="0dp"
-            android:layout_below="@+id/deskripsi"
-            android:tint="#757575"
-            style="?android:attr/borderlessButtonStyle"
-            app:srcCompat="@drawable/ic_star_border_black_24dp"/>
-        <ImageButton
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:id="@+id/rating2"
-            android:layout_marginRight="0dp"
-            android:layout_toRightOf="@+id/rating1"
-            android:layout_below="@+id/deskripsi"
-            android:tint="#757575"
-            style="?android:attr/borderlessButtonStyle"
-            app:srcCompat="@drawable/ic_star_border_black_24dp"/>
-        <ImageButton
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:id="@+id/rating3"
-            android:layout_marginRight="0dp"
-            android:layout_below="@+id/deskripsi"
-            android:layout_toRightOf="@+id/rating2"
-            android:tint="#757575"
-            style="?android:attr/borderlessButtonStyle"
-            app:srcCompat="@drawable/ic_star_border_black_24dp"/>
-        <ImageButton
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:id="@+id/rating4"
-            android:layout_marginRight="0dp"
-            android:layout_below="@+id/deskripsi"
-            android:layout_toRightOf="@+id/rating3"
-            android:tint="#757575"
-            style="?android:attr/borderlessButtonStyle"
-            app:srcCompat="@drawable/ic_star_border_black_24dp"/>
-        <ImageButton
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:id="@+id/rating5"
-            android:layout_marginRight="0dp"
-            android:layout_below="@+id/deskripsi"
-            android:layout_toRightOf="@+id/rating4"
-            android:tint="#757575"
-            style="?android:attr/borderlessButtonStyle"
-            app:srcCompat="@drawable/ic_star_border_black_24dp"/>
+
+        <RatingBar
+            android:id="@+id/ratingbar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView"
+            android:numStars="5"
+            android:rating="2"
+            android:stepSize="1" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ratingbar1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:text="submit" />
+
+        <TextView
+            android:id="@+id/txtRatingValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/lblResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/txtRatingValue"
+            android:layout_toRightOf="@+id/txtRatingValue"
+            android:text="Result : "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
     </RelativeLayout>
 
 </android.support.v7.widget.CardView>
