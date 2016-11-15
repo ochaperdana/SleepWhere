@@ -9,61 +9,61 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="id.sch.smktelkom_mlg.project.xirpl107162534.sleepwhere.MenuActivity"
-    android:weightSum="1">
+    android:weightSum="1"
+    tools:context="id.sch.smktelkom_mlg.project.xirpl107162534.sleepwhere.MenuActivity">
 
 
     <TextView
-        android:text="Hello Guess"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title"
-        android:textColor="@color/colorPrimary"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
         android:layout_marginLeft="75dp"
-        android:id="@+id/textView"
+        android:layout_marginTop="50dp"
+        android:text="Hello Guess"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/colorPrimary"
         android:textSize="36sp" />
 
     <ImageButton
+        android:id="@+id/imageButton4"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        app:srcCompat="@drawable/ic_visibility_black_24dp"
-        android:id="@+id/imageButton4"
-        android:layout_below="@+id/imageButton2"
         android:layout_alignLeft="@+id/imageButton2"
-        android:layout_alignStart="@+id/imageButton2" />
+        android:layout_alignStart="@+id/imageButton2"
+        android:layout_below="@+id/imageButton2"
+        app:srcCompat="@drawable/ic_remove_red_eye_black_24dp" />
 
     <ImageButton
+        android:id="@+id/imageButton2"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        app:srcCompat="@drawable/ic_build_black_24dp"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignTop="@+id/imageButton"
         android:layout_marginLeft="126dp"
         android:layout_marginStart="126dp"
-        android:id="@+id/imageButton2"
-        android:layout_alignTop="@+id/imageButton"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView" />
+        app:srcCompat="@drawable/ic_star_border_black_24dp" />
 
     <ImageButton
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        app:srcCompat="@drawable/ic_search_black_24dp"
         android:id="@+id/imageButton"
-        android:layout_marginTop="37dp"
-        android:layout_below="@+id/textView"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView" />
-
-    <ImageButton
         android:layout_width="120dp"
         android:layout_height="120dp"
-        app:srcCompat="@drawable/ic_event_note_black_24dp"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="37dp"
+        app:srcCompat="@drawable/ic_search_black_24dp" />
+
+    <ImageButton
         android:id="@+id/imageButton3"
-        android:layout_below="@+id/imageButton"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_alignLeft="@+id/imageButton"
-        android:layout_alignStart="@+id/imageButton" />
+        android:layout_alignStart="@+id/imageButton"
+        android:layout_below="@+id/imageButton"
+        app:srcCompat="@drawable/ic_event_note_black_24dp" />
 
 
 </RelativeLayout>
