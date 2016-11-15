@@ -9,11 +9,13 @@ import android.graphics.drawable.Drawable;
 public class Info {
     public String judul;
     public String deskripsi;
+    public String detail;
     public Drawable foto;
 
-    public Info(String judul, String deskripsi, Drawable foto){
+    public Info(String judul, String deskripsi, String detail, Drawable foto) {
         this.judul = judul;
         this.deskripsi = deskripsi;
+        this.detail = detail;
         this.foto = foto;
     }
 }

@@ -9,7 +9,6 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import id.sch.smktelkom_mlg.project.xirpl107162534.sleepwhere.MainActivity;
 import id.sch.smktelkom_mlg.project.xirpl107162534.sleepwhere.R;
 import id.sch.smktelkom_mlg.project.xirpl107162534.sleepwhere.baru.Info;
 
@@ -18,16 +17,12 @@ import id.sch.smktelkom_mlg.project.xirpl107162534.sleepwhere.baru.Info;
  */
 
 public class InfoAdapter extends RecyclerView.Adapter<InfoAdapter.ViewHolder> {
-    InfoAdapter.IInfoAdapter iInfoAdapter;
 
     ArrayList<Info> infoList;
 
-    public InfoAdapter(MainActivity mainActivity, ArrayList<Info> infoList)
-    {
-        this.infoList = infoList;
-    }
 
-    public InfoAdapter(ArrayList<Info> iList) {
+    public InfoAdapter(ArrayList<Info> infoList) {
+        this.infoList = infoList;
     }
 
     @Override
@@ -43,6 +38,7 @@ public class InfoAdapter extends RecyclerView.Adapter<InfoAdapter.ViewHolder> {
         Info info = infoList.get(position);
         holder.tvJudul.setText(info.judul);
         holder.tvDeskripsi.setText(info.deskripsi);
+        holder.tvDetail.setText(info.detail);
         holder.ivFoto.setImageDrawable(info.foto);
     }
 
@@ -58,14 +54,14 @@ public class InfoAdapter extends RecyclerView.Adapter<InfoAdapter.ViewHolder> {
         ImageView ivFoto;
         TextView tvJudul;
         TextView tvDeskripsi;
+        TextView tvDetail;
         public ViewHolder(View itemView) {
             super(itemView);
             ivFoto = (ImageView) itemView.findViewById(R.id.imageView);
             tvJudul = (TextView) itemView.findViewById(R.id.textViewJudul);
             tvDeskripsi = (TextView) itemView.findViewById(R.id.textViewDeskripsi);
+            tvDetail = (TextView) itemView.findViewById(R.id.textViewDetail);
         }
     }
 
-    public class IInfoAdapter {
-    }
 }

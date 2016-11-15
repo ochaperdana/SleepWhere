@@ -39,12 +39,12 @@
         <item>Kawasan Malang Raya</item>
     </string-array>
     <array name="gambar_tempat">
-        <item>@drawable/ic_local_play_black_24dp</item>
-        <item>@drawable/ic_local_convenience_store_black_24dp</item>
-        <item>@drawable/ic_local_convenience_store_black_24dp</item>
-        <item>@drawable/ic_local_convenience_store_black_24dp</item>
-        <item>@drawable/ic_local_convenience_store_black_24dp</item>
-        <item>@drawable/ic_whatshot_black_24dp</item>
+        <item>@drawable/police</item>
+        <item>@drawable/hospital</item>
+        <item>@drawable/hospital</item>
+        <item>@drawable/hospital</item>
+        <item>@drawable/hospital</item>
+        <item>@drawable/pemadam</item>
     </array>
 
 </resources>

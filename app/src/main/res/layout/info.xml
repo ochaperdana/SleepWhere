@@ -1,38 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:background="?android:attr/selectableItemBackground"
     android:padding="16dp">
 
     <ImageView
         android:id="@+id/imageView"
-        tools:src="@drawable/ic_local_play_black_24dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
         android:scaleType="centerCrop"
-        android:layout_width="match_parent"
-        android:layout_height="200dp" />
+        tools:src="@drawable/ic_local_play_black_24dp" />
     <TextView
+        android:id="@+id/textViewJudul"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/imageView"
+        android:layout_marginLeft="10dp"
         android:layout_toEndOf="@+id/imageView"
-        android:layout_marginLeft="8dp"
-        android:maxLines="1"
+        android:layout_toRightOf="@+id/imageView"
         android:ellipsize="end"
-        android:text="Judul"
-        android:id="@+id/textViewJudul"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        tools:text="Judul" />
     <TextView
+        android:id="@+id/textViewDeskripsi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textViewJudul"
         android:layout_alignLeft="@+id/textViewJudul"
         android:layout_alignStart="@+id/textViewJudul"
-        android:maxLines="2"
+        android:layout_below="@+id/textViewJudul"
         android:ellipsize="end"
+        android:maxLines="2"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:id="@+id/textViewDeskripsi"/>
+        tools:text="Deskripsi" />
+
+    <TextView
+        android:id="@+id/textViewDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewJudul"
+        android:layout_alignStart="@+id/textViewJudul"
+        android:layout_below="@+id/textViewDeskripsi"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:text="Detail" />
 
 </RelativeLayout>

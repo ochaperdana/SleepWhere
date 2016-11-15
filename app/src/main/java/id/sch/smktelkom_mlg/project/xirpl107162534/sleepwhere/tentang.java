@@ -1,12 +1,9 @@
 package id.sch.smktelkom_mlg.project.xirpl107162534.sleepwhere;
 
-import android.content.res.Resources;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.TextView;
 
-public class Tentang extends AppCompatActivity {
+public class Tentang extends MainActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
