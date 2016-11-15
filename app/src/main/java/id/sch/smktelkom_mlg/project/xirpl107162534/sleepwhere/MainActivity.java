@@ -16,10 +16,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.RatingBar;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -35,10 +31,6 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
     boolean isFilter;
     ArrayList<Integer> mListMapFilter=new ArrayList<>();
     String mQuery;
-    private int[] arFoto;
-    private RatingBar ratingBar;
-    private TextView txtRatingValue;
-    private Button btnSubmit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,8 +43,6 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
         mAdapter=new HotelAdapter(this,mList);
         recyclerView.setAdapter(mAdapter);
         fillData();
-        addListenerOnRatingBar();
-        addListenerOnButton();
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,39 +52,6 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
             }
         });
 
-    }
-
-    private void addListenerOnRatingBar() {
-
-        ratingBar = (RatingBar) findViewById(R.id.ratingbar1);
-        txtRatingValue = (TextView) findViewById(R.id.txtRatingValue);
-        ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
-            public void onRatingChanged(RatingBar ratingBar, float rating,
-                                        boolean fromUser) {
-
-                txtRatingValue.setText(String.valueOf(rating));
-
-            }
-        });
-    }
-
-    private void addListenerOnButton() {
-        ratingBar = (RatingBar) findViewById(R.id.ratingbar1);
-        btnSubmit = (Button) findViewById(R.id.button1);
-
-        //if click on me, then display the current rating value.
-        btnSubmit.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-
-                Toast.makeText(MainActivity.this,
-                        String.valueOf(ratingBar.getRating()),
-                        Toast.LENGTH_SHORT).show();
-
-            }
-
-        });
     }
 
 
