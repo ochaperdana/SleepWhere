@@ -36,7 +36,6 @@
         android:maxLines="2"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         tools:text="Deskripsi" />
-
     <TextView
         android:id="@+id/textViewDetail"
         android:layout_width="match_parent"
