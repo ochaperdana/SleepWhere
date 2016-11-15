@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?android:attr/selectableItemBackground"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        tools:src="@drawable/ic_local_play_black_24dp"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginLeft="8dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="Judul"
+        android:id="@+id/textViewJudul"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewJudul"
+        android:layout_alignLeft="@+id/textViewJudul"
+        android:layout_alignStart="@+id/textViewJudul"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:id="@+id/textViewDeskripsi"/>
+
+</RelativeLayout>

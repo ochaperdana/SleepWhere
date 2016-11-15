@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tentang"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="id.sch.smktelkom_mlg.project.xirpl107162534.sleepwhere.Tentang">
+
+    <TextView
+        android:text="Tentang SleepWhere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/textView2"
+        android:textSize="30sp" />
+
+    <TextView
+        android:text="Aplikasi SleepWhere dibuat untuk memenuhi Project Akhir Android. Dirancang dan dibuat oleh Tim beranggotakan Bayu,Dinar,Ocha,Yessy. Aplikasi SleepWhere dapat dijalankan pada android IceCreamSandwich keatas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:id="@+id/textView3"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
