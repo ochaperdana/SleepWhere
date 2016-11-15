@@ -72,8 +72,6 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
             ivFoto=(ImageView) itemView.findViewById(R.id.imageView);
             tvJudul=(TextView) itemView.findViewById(R.id.judul);
             tvDeskripsi=(TextView) itemView.findViewById(R.id.deskripsi);
-            ibFav = (ImageButton) itemView.findViewById(R.id.ibFav);
-            ibShare = (ImageButton) itemView.findViewById(R.id.ibShare);
             itemView.setOnClickListener(new View.OnClickListener()
             {
                 @Override
