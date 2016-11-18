@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tips">
+        <item>Berangkat Sehari Sebelum Weekend Day</item>
+        <item>Cek Kembali Kelayakan Sarana Transportasi Yang Digunakan</item>
+        <item>Memesan Hotel dan Penginapan Jauh-Jauh Hari</item>
+        <item>Menggunakan Jalur Alternatif</item>
+        <item>Nikmati Kondisi Dan Situasi Yang Ada</item>
+    </string-array>
+    <string-array name="tips_details">
+        <item>
+            Kota Batu Malang memang telah menjadi satu kota tujuan wisata yang dikenal banyak wisatawan terutama
+            wisatawan domistik sehingga luapan pengunjung tidak akan bisa di hindari, untuk itu upayakan berangkat
+            sehari sebelum masa weekend atau berangkat pada Jumat malam agar bisa terhindar dari kemacetan dan
+            kepadatan arus lalu lintas pada saat weekend day. Keuntungan anda berangkat malam hari cuaca juga lebih bersahabat
+            dan tidak panas sehingga anda lebih bisa menikmati perjalanan menuju kota wisata Batu Malang
+        </item>
+        <item>
+            Pergi berlibur ke kota wisata Batu Malang dapat menggunakan berbagai sarana transportasi bisa kendaraan pribadi,
+            kendaraan roda dua atau menggunakan kendaraan umum. Bila menggunakan kendaraan pribadi sobat traveler harus benar-benar
+            mengecek dan memastikan kelayakan kendaraan yang akan anda gunakan. Karena bukan tidak mungkin anda terjebak kemacetan
+            dalam satu rute perjalanan, bila anda mengalami hal ini dan kendaraan anda tidak dalam kondisi yang layak bisa jadi mengalami mogok di tengah
+            perjalanan karena mesin yang kepanasan. Untuk itu kelayakan kendaraan harus benar-benar di perhatikan.
+        </item>
+        <item>
+            Mengunjungi kota Batu Malang serasa belum lengkap bila anda tidak menginap walaupun
+            hanya sehari karena suasanya malam kota Batu sangat berbeda, dinginnya udara malam serta panorama
+            kota Batu bila disaksikan di malam hari akan membawa sensasi tersendiri. Namun bila berencana menginap di
+            weekend day atau masa liburan sobat traveler harus memesan hotel dan penginapan jauh-jauh hari agar bisa
+            menikmati liburan bersama keluarga tanpa takut tidak kebagian hotel dan penginapan di kota Batu-Malang.
+
+        </item>
+        <item>
+            Bagi sobat traveler yang menetap di kota Surabaya, Mojokerto, Gresik, dan Lamongan dapat menggunakan jalur alternatif menuju kota Batu melalui kota Krian-Mojosari-Pacet-Cangar-Batu.
+            Namun perlu diperhatikan untuk melalui rute alternatif ini kondisi kendaraan atau sarana transportasi yang anda gunakan
+            harus benar-benar dalam kondisi layak pakai, karena mengingat medan yang harus dilalui sangat berbahaya berupa
+            tanjakan dan turunan yang berkelok-kelok sehingga kondisi kendaraan dan sarana transportasi yang prima sangat di butuhkan
+            untuk menempuh jalur alternatif ini.
+        </item>
+        <item>
+            Traveling ke kota wisata Batu Malang pada saat weekend atau liburan memang membutuhkan sedikit "perjuangan",
+            karena pada masa-masa ini kunjungan ke kota Batu akan meningkat dengan drastis, sehingga bukan tidak mungkin anda
+            akan berhadapan dengan namanya macet, mengantri atau berdesak-desakan di satu lokasi wisata. Jangan menggerutu atau
+            bahkan panik, nikmati saja suasana yang ada di hadapan anda. Dengan begitu anda akan lebih bisa menikmati setiap
+            kunjungan ke tempat-tempat wisata di kota Batu walaupun harus berbaur dengan pengunjung lain.
+        </item>
+
+    </string-array>
+</resources>

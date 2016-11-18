@@ -1,8 +1,8 @@
 package id.sch.smktelkom_mlg.project.xirpl107162534.sleepwhere;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 public class MenuActivity extends AppCompatActivity {
@@ -23,7 +23,13 @@ public class MenuActivity extends AppCompatActivity {
         findViewById(R.id.imageButton4).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MenuActivity.this, Tentang.class));
+                startActivity(new Intent(MenuActivity.this, tentang.class));
+            }
+        });
+        findViewById(R.id.imageButton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MenuActivity.this, MainActivity.class));
             }
         });
     }
