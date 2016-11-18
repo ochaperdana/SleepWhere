@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
     HotelAdapter mAdapter;
     private int[] arFoto;
 
-    ArrayList<Hotel> mListAll=new ArrayList<>();
+    ArrayList<Hotel> mListAll= new ArrayList<>();
     boolean isFilter;
     ArrayList<Integer> mListMapFilter=new ArrayList<>();
     String mQuery;
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
         }
         a.recycle();
 
-        for (int i=0;i<arJudul.length;i++){
+        for (int i=0;i<arFoto.length;i++){
             mList.add(new Hotel(arJudul[i],arDeskripsi[i],arFoto[i],arDetail[i],arLokasi[i]));
         }
         mAdapter.notifyDataSetChanged();

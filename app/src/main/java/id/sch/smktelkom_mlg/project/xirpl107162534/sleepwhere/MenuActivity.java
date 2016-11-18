@@ -23,13 +23,13 @@ public class MenuActivity extends AppCompatActivity {
         findViewById(R.id.imageButton4).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MenuActivity.this, Tentang.class));
+                startActivity(new Intent(MenuActivity.this, tentang.class));
             }
         });
         findViewById(R.id.imageButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MenuActivity.this, DetailActivity.class));
+                startActivity(new Intent(MenuActivity.this, MainActivity.class));
             }
         });
     }

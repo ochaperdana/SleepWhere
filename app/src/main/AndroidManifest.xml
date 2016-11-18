@@ -23,7 +23,7 @@
             android:label="@string/title_activity_detail"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".Tentang" />
+        <activity android:name=".tentang" />
         <activity android:name=".InfoActivity"></activity>
     </application>
 
