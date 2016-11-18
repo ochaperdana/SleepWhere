@@ -11,11 +11,14 @@ public class Info {
     public String deskripsi;
     public String detail;
     public Drawable foto;
+    // public Drawable panggil;
+
 
     public Info(String judul, String deskripsi, String detail, Drawable foto) {
         this.judul = judul;
         this.deskripsi = deskripsi;
         this.detail = detail;
         this.foto = foto;
+        // this.panggil = panggil;
     }
 }

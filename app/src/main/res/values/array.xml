@@ -45,6 +45,10 @@
         <item>@drawable/hospital</item>
         <item>@drawable/hospital</item>
         <item>@drawable/pemadam</item>
+        <item>@drawable/pemadam</item>
     </array>
+    <string-array name="panggil">
+        <item>@drawable/phone</item>
+    </string-array>
 
 </resources>

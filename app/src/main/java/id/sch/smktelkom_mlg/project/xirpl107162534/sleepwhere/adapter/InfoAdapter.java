@@ -40,6 +40,7 @@ public class InfoAdapter extends RecyclerView.Adapter<InfoAdapter.ViewHolder> {
         holder.tvDeskripsi.setText(info.deskripsi);
         holder.tvDetail.setText(info.detail);
         holder.ivFoto.setImageDrawable(info.foto);
+        //holder.ivpanggil.setImageDrawable(info.panggil);
     }
 
     @Override
@@ -52,12 +53,14 @@ public class InfoAdapter extends RecyclerView.Adapter<InfoAdapter.ViewHolder> {
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         ImageView ivFoto;
+        //ImageView ivpanggil;
         TextView tvJudul;
         TextView tvDeskripsi;
         TextView tvDetail;
         public ViewHolder(View itemView) {
             super(itemView);
             ivFoto = (ImageView) itemView.findViewById(R.id.imageView);
+            // ivpanggil = (ImageView) itemView.findViewById(R.id.imageViewCall);
             tvJudul = (TextView) itemView.findViewById(R.id.textViewJudul);
             tvDeskripsi = (TextView) itemView.findViewById(R.id.textViewDeskripsi);
             tvDetail = (TextView) itemView.findViewById(R.id.textViewDetail);

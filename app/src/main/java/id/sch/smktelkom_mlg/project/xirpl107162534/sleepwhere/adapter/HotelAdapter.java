@@ -80,14 +80,7 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
                     mIHotelAdapter.doClick(getAdapterPosition());
                 }
             });
-          ibFav.setOnClickListener(new View.OnClickListener()
-            {
-                @Override
-                public void onClick(View v)
-                {
-                    mIHotelAdapter.doFav(getAdapterPosition());
-                }
-            });
+
         }
     }
 }
