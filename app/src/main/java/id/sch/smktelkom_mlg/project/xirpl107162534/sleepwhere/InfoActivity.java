@@ -7,11 +7,13 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import java.util.ArrayList;
 
@@ -37,7 +39,21 @@ public class InfoActivity extends AppCompatActivity {
 
         fillData();
 
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goMaps("https://www.google.co.id/maps/@-7.9786453,112.631783,12z?hl=en");
+            }
+        });
 
+    }
+
+    private void goMaps(String peta) {
+        Uri maps=Uri.parse(peta);
+        Intent intent=new Intent(Intent.ACTION_VIEW, maps);
+        if (intent.resolveActivity(getPackageManager())!=null)
+            startActivity(intent);
     }
 
     private void dialPhoneNumber(String phoneNumber) {

@@ -32,14 +32,14 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v= LayoutInflater.from(parent.getContext()).inflate(R.layout.item,parent,false);
-        ViewHolder vh=new ViewHolder(v);
+        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item, parent, false);
+        ViewHolder vh = new ViewHolder(v);
         return vh;
     }
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        Hotel hotel=hotelList.get(position);
+        Hotel hotel = hotelList.get(position);
         holder.tvJudul.setText(hotel.judul);
         holder.tvDeskripsi.setText(hotel.deskripsi);
         holder.ivFoto.setImageURI(Uri.parse(hotel.foto));
@@ -47,7 +47,7 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
 
     @Override
     public int getItemCount() {
-        if (hotelList!=null)
+        if (hotelList != null)
             return hotelList.size();
         return 0;
     }
@@ -69,17 +69,17 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
 
         public ViewHolder(View itemView) {
             super(itemView);
-            ivFoto=(ImageView) itemView.findViewById(R.id.imageView);
-            tvJudul=(TextView) itemView.findViewById(R.id.judul);
-            tvDeskripsi=(TextView) itemView.findViewById(R.id.deskripsi);
-            itemView.setOnClickListener(new View.OnClickListener()
-            {
+            ivFoto = (ImageView) itemView.findViewById(R.id.imageView);
+            tvJudul = (TextView) itemView.findViewById(R.id.judul);
+            tvDeskripsi = (TextView) itemView.findViewById(R.id.deskripsi);
+            itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
-                public void onClick(View v)
-                {
+                public void onClick(View v) {
                     mIHotelAdapter.doClick(getAdapterPosition());
                 }
             });
-         
+
+        }
+    }
 }
 

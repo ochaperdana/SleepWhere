@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -54,10 +55,16 @@ public class MainActivity extends AppCompatActivity implements HotelAdapter.IHot
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                goMaps("https://www.google.co.id/maps/@-7.9786453,112.631783,12z?hl=en");
             }
         });
+    }
+
+    private void goMaps(String url) {
+        Uri maps=Uri.parse(url);
+        Intent intent=new Intent(Intent.ACTION_VIEW, maps);
+        if (intent.resolveActivity(getPackageManager())!=null)
+            startActivity(intent);
     }
 
     private void fillData() {
