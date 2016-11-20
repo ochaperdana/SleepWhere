@@ -58,8 +58,8 @@ public class InfoAdapter extends RecyclerView.Adapter<InfoAdapter.ViewHolder> {
         public ViewHolder(View itemView) {
             super(itemView);
             ivFoto = (ImageView) itemView.findViewById(R.id.imageView);
-            tvJudul = (TextView) itemView.findViewById(R.id.textViewJudul);
-            tvDeskripsi = (TextView) itemView.findViewById(R.id.textViewDeskripsi);
+            tvJudul = (TextView) itemView.findViewById(R.id.textViewJudultips);
+            tvDeskripsi = (TextView) itemView.findViewById(R.id.textViewDeskripsitips);
             tvDetail = (TextView) itemView.findViewById(R.id.textViewDetail);
         }
     }
