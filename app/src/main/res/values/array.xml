@@ -50,5 +50,12 @@
     <string-array name="panggil">
         <item>@drawable/phone</item>
     </string-array>
-
+    <array name="phoneNumber">
+        <item>3664444</item>
+        <item>0341362101</item>
+        <item>0341470805</item>
+        <item>0341393000</item>
+        <item>0341362459</item>
+        <item>0341364617</item>
+    </array>
 </resources>

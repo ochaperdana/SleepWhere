@@ -3,12 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="id.sch.smktelkom_mlg.project.xirpl107162534.sleepwhere.MainActivity">
     <item
-        android:icon="@drawable/ic_search_black_24dp"
         android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_black_24dp"
         android:title="Search"
-        app:showAsAction="ifRoom|collapseActionView"
         app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView"
         />
+    <item
+        android:id="@id/action_search"
+        android:actionProviderClass="android.widget.ShareActionProvider"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="Search" />
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
