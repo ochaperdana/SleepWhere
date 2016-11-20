@@ -24,3 +24,4 @@ public class tentang extends MainActivity {
         return super.onOptionsItemSelected(item);
     }
 }
+
