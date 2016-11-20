@@ -75,24 +75,22 @@ Setiap kamar di guest house ini dilengkapi dengan TV layar datar, lemari pakaian
         <item> </item>
     </string-array>
     <string-array name="place_locations">
-        <item>8 Rue Scribe, 75009 Paris, France</item>
-        <item>Piazza del Capitolo - 50122 Florence</item>
-        <item>New York City</item>
-        <item>2-3-1 Asakusa, Taitō-ku, Tokyo, Japan</item>
-        <item>At Meydanı No:7, 34122 Fatih/İstanbul, Turkey</item>
-        <item>Cape Town, South Africa</item>
-        <item>8 Rue Scribe, 75009 Paris, France</item>
-        <item>Piazza del Capitolo - 50122 Florence</item>
-        <item>New York City</item>
-        <item>2-3-1 Asakusa, Taitō-ku, Tokyo, Japan</item>
-        <item>At Meydanı No:7, 34122 Fatih/İstanbul, Turkey</item>
-        <item>Cape Town, South Africa</item>
-        <item>8 Rue Scribe, 75009 Paris, France</item>
-        <item>Piazza del Capitolo - 50122 Florence</item>
-        <item>New York City</item>
-        <item>2-3-1 Asakusa, Taitō-ku, Tokyo, Japan</item>
-        <item>At Meydanı No:7, 34122 Fatih/İstanbul, Turkey</item>
-        <item>Cape Town, South Africa</item>
+        <item>Jln. Ir. Soekarno nomor 120, Batu, Malang </item>
+        <item>Jln. Trunojoyo nomor 99, Songgokerto, Batu, Malang </item>
+        <item>Jln. Panglima Sudirman no 127 Batu, Malang </item>
+        <item>Jln. Indragiri nomor 4, Batu, Malang </item>
+        <item>Jl. Raya Selekta No. 1-15, Batu, Malang</item>
+        <item>Jl. Abdul Gani Atas Batu, Batu, Malang</item>
+        <item>Jl. Ir. Soekarno - Puskesmas Beji, Batu, Malang</item>
+        <item>Jl. Salam Bulukerto Bumiaji, Batu, Malang</item>
+        <item>Jl. Kartika No. 3, Batu, Malang</item>
+        <item>Jl.Untung suropati no.49 Batu, Batu, Malang</item>
+        <item>Jl. Trunojoyo no. 2 Junrejo., Batu, Malang</item>
+        <item>Jl. Sultan Agung 29, Batu, Malang</item>
+        <item>Jl.Bukit Berbunga No.14 Bumiaji,Batu, Malang</item>
+        <item>Jl. Darsono 14, Batu, Batu, Malang</item>
+        <item>Jl. Ikhwan Hadi 47-49, Batu, Malang</item>
+        <item>Jl. Imam Bonjol Atas No.36, Batu, Malang</item>
     </string-array>
     <array name="places_picture">
         <item>@drawable/a</item>
