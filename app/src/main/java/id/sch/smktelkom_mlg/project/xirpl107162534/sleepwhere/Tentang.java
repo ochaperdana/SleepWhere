@@ -3,7 +3,7 @@ package id.sch.smktelkom_mlg.project.xirpl107162534.sleepwhere;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-public class tentang extends MainActivity {
+public class Tentang extends MainActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,3 +24,4 @@ public class tentang extends MainActivity {
         return super.onOptionsItemSelected(item);
     }
 }
+

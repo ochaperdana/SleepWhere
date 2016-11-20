@@ -5,10 +5,11 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 
 /**
- * Created by Yess on 14/11/2016.
+ * Created by Yess on 18/11/2016.
  */
 
-public class item_list extends DetailActivity {
+
+public class Item_list extends DetailActivity {
     TextView tvrating;
 
     @Override
