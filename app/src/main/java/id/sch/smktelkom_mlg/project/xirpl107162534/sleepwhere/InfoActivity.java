@@ -47,6 +47,7 @@ public class InfoActivity extends AppCompatActivity {
             }
         });
 
+
     }
 
     private void goMaps(String peta) {

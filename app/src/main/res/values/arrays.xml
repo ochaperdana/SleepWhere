@@ -32,6 +32,8 @@
         <item>Sumber Hotel</item>
         <item>Villa dan Hotel Family Gradia</item>
         <item>Hotel Prima Asri</item>
+
+
     </string-array>
     <string-array name="place_desc">
         <item>The Singhasari Resort adalah hotel bintang 5 yang menawarkan fasilitas yang mewah dan layanan profesional. Hotel ini menyediakan 193 kamar tamu. The Singhasari Resort berjarak 3 km dari Jatim Park dan 3,2 km dari pasar buah dan sayuran. Sementara itu BNS dapat dicapai dengan jarak 3,8 km
@@ -109,5 +111,6 @@ Setiap kamar di guest house ini dilengkapi dengan TV layar datar, lemari pakaian
         <item>@drawable/n</item>
         <item>@drawable/o</item>
         <item>@drawable/p</item>
+
     </array>
 </resources>

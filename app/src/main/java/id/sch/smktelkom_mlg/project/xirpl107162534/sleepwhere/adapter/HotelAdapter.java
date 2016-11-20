@@ -64,7 +64,6 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
         TextView tvDeskripsi;
         Button bEdit;
         Button bDelete;
-        ImageButton ibFav;
         ImageButton ibShare;
 
         public ViewHolder(View itemView) {
