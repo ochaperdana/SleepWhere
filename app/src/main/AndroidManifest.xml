@@ -4,13 +4,13 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:icon="@drawable/kasur"
+        android:label="Sleep Where"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MenuActivity"
-            android:label="@string/app_name"
+            android:label="Sleep Where"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +25,12 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".Tentang" />
         <activity android:name=".InfoActivity" />
-        <activity android:name=".tipsActivity"></activity>
+        <activity android:name=".TipsActivity" />
+        <activity
+            android:name=".TipsDetail"
+            android:label="@string/title_activity_tips_detail"
+            android:theme="@style/AppTheme">
+        </activity>
     </application>
 
 </manifest>

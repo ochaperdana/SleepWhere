@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="pictures">
+        <item>@drawable/za</item>
+        <item>@drawable/zb</item>
+        <item>@drawable/zc</item>
+        <item>@drawable/zd</item>
+        <item>@drawable/ze</item>
+    </string-array>
     <string-array name="tips">
-        <item>Berangkat Sehari Sebelum Weekend Day</item>
-        <item>Cek Kembali Kelayakan Sarana Transportasi Yang Digunakan</item>
-        <item>Memesan Hotel dan Penginapan Jauh-Jauh Hari</item>
-        <item>Menggunakan Jalur Alternatif</item>
-        <item>Nikmati Kondisi Dan Situasi Yang Ada</item>
+        <item>Berangkat Lebih Awal</item>
+        <item>Cek Sarana Transportasi</item>
+        <item>Segera Memesan Akomodasi</item>
+        <item>Memilih Jalur Alternatif</item>
+        <item>Menikmati Suasana</item>
     </string-array>
     <string-array name="tips_details">
         <item>
