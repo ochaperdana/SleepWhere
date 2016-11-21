@@ -103,6 +103,22 @@
         <item>Jalan Veteran No.8A, Penanggungan, Klojen, Kota Malang, Jawa Timur 65145 (0341) 550368</item>
         <item>Jalan Tugu No.3, Kauman, Klojen, Malang, Kota Malang, Jawa Timur 65119 (0341) 363891</item>
         <item>Jl. Semeru No.59, Gading Kasri, Klojen, Kota Malang, Jawa Timur 65115 (0341) 368992</item>
+        <item>Jln. Ir. Soekarno nomor 120, Batu, Malang </item>
+        <item>Jln. Trunojoyo nomor 99, Songgokerto, Batu, Malang </item>
+        <item>Jln. Panglima Sudirman no 127 Batu, Malang </item>
+        <item>Jln. Indragiri nomor 4, Batu, Malang </item>
+        <item>Jl. Raya Selekta No. 1-15, Batu, Malang</item>
+        <item>Jl. Abdul Gani Atas Batu, Batu, Malang</item>
+        <item>Jl. Ir. Soekarno - Puskesmas Beji, Batu, Malang</item>
+        <item>Jl. Salam Bulukerto Bumiaji, Batu, Malang</item>
+        <item>Jl. Kartika No. 3, Batu, Malang</item>
+        <item>Jl.Untung suropati no.49 Batu, Batu, Malang</item>
+        <item>Jl. Trunojoyo no. 2 Junrejo., Batu, Malang</item>
+        <item>Jl. Sultan Agung 29, Batu, Malang</item>
+        <item>Jl.Bukit Berbunga No.14 Bumiaji,Batu, Malang</item>
+        <item>Jl. Darsono 14, Batu, Batu, Malang</item>
+        <item>Jl. Ikhwan Hadi 47-49, Batu, Malang</item>
+        <item>Jl. Imam Bonjol Atas No.36, Batu, Malang</item>
     </string-array>
     <array name="places_picture">
         <item>@drawable/a</item>
