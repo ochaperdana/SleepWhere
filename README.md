@@ -15,7 +15,7 @@
 #####Terimakasih
 
 ![Screenshot_2016_11_20_6_38_52.png](https://s12.postimg.org/8o0crawb1/Screenshot_2016_11_20_6_38_52.png)
-![Screenshot_2016_11_20_6_38_29.png](https://s12.postimg.org/6nxszhgjx/Screenshot_2016_11_20_6_38_29.png)
+![Screenshot_2016_11_21_14_43_38.png](https://s16.postimg.org/toqy6svit/Screenshot_2016_11_21_14_43_38.png)
 ![Screenshot_2016_11_20_6_38_56.png](https://s13.postimg.org/uhmdmvl13/Screenshot_2016_11_20_6_38_56.png)
 ![Screenshot_2016_11_20_6_38_47.png](https://s12.postimg.org/z5ddmvfjh/Screenshot_2016_11_20_6_38_47.png)
 ![Screenshot_2016_11_20_6_39_29.png](https://s17.postimg.org/unhp6x8cv/Screenshot_2016_11_20_6_39_29.png)
