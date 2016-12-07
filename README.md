@@ -42,6 +42,6 @@
 
 ##Introduction Video
 <a href="https://www.youtube.com/watch?v=ItIaTIfJRbs&feature=youtu.be" target="_blank"><img src="http://img.youtube.com/vi/ItIaTIfJRbs/0.jpg" 
-alt="SLEEPWHERE:INTRODUCTION" width="1080" height="720" border="10" /></a>
+alt="SLEEPWHERE:INTRODUCTION" width="540" height="360" border="10" /></a>
 
 ##Link Aplikasi
