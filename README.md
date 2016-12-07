@@ -1,21 +1,25 @@
 # SleepWhere
 ###Dirancang dan dibuat oleh kelompok 7 yang beranggotakan :
-####Nama : Arya Bayu Ageng Pamungkas
+####aryabayu
+    Nama : Arya Bayu Ageng Pamungkas
     Kelas : XI RPL 1
     Sekolah : SMK Telkom Malang
     No Absen : 07
     NIS : 4676/1396.070
-####Nama : Ladinar Nanda Aprilia
+####ladinarnanda
+    Nama : Ladinar Nanda Aprilia
     Kelas : XI RPL 1
     Sekolah : SMK Telkom Malang
     No Absen : 16
     NIS : 4738/1457.070
-####Nama : Ocha Putri Perdana Prihatina
+####ochaperdana
+    Nama : Ocha Putri Perdana Prihatina
     Kelas : XI RPL 1
     Sekolah : SMK Telkom Malang
     No Absen : 25
     NIS : 4796/1515.070
-####Nama : Yessy Permatasari
+####yessypermatasari
+    Nama : Yessy Permatasari
     Kelas : XI RPL 1
     Sekolah : SMK Telkom Malang
     No Absen : 34
