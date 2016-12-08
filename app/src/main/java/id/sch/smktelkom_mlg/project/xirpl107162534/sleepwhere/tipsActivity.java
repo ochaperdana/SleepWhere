@@ -22,7 +22,7 @@ import id.sch.smktelkom_mlg.project.xirpl107162534.sleepwhere.baru.Tips;
 /**
  * Created by Yess on 18/11/2016.
  */
-public class TipsActivity extends AppCompatActivity implements TipsAdapter.ITipsAdapter{
+public class tipsActivity extends AppCompatActivity implements TipsAdapter.ITipsAdapter {
 
     public static final String TIPS = "tips";
     ArrayList<Tips> mList = new ArrayList<>();

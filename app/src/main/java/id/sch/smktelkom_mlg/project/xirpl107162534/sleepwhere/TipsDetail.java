@@ -21,7 +21,7 @@ public class TipsDetail extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Tips tips=(Tips) getIntent().getSerializableExtra(TipsActivity.TIPS);
+        Tips tips = (Tips) getIntent().getSerializableExtra(tipsActivity.TIPS);
         setTitle(tips.judul);
 
         ImageView ivFoto=(ImageView) findViewById(R.id.imageViewPic);

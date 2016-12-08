@@ -92,4 +92,19 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="title_activity_tips_detail">TipsDetail</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Sleep Where</string>
+    <string name="slide_1_desc">You can easily find the nearest hotel from your tourism destination in Malang and Batu</string>
+
+    <string name="slide_2_title">Search</string>
+    <string name="slide_2_desc">Enter your destination to find the nearest hotel</string>
+
+    <string name="slide_3_title">Tips</string>
+    <string name="slide_3_desc">Find some travel tips and enjoy your vacation</string>
+
+    <string name="slide_4_title">Information</string>
+    <string name="slide_4_desc">Some addresses and telephone numbers from important public services in Malang</string>
 </resources>
